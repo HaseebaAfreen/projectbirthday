@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>🎉 Happy Birthday, [Name]! 🎉</h1>
+    <p>Wishing you love, joy, and cake! 🍰</p>
+
+    <div id="countdown"></div>
+    <button onclick="playMusic()">🎵 Play Music</button>
+
+    <div id="unlockMessage" class="hidden">
+      <p class="special-msg">💌 You've unlocked your surprise message!<br>I’m so lucky to know you. 🥰</p>
+    </div>
+
+    <div class="carousel">
+      <img id="carouselImage" src="images/photo1.jpg" alt="Memory" />
+    </div>
+
+    <p>📷 Swipe through the memories!</p>
+
+    <div class="qr-code">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://your-site-link.com" alt="QR Code">
+      <p>Scan for a Surprise! 🎁</p>
+    </div>
+  </div>
+
+  <canvas id="confetti"></canvas>
+  <audio id="bdaySong" src="birthday.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
